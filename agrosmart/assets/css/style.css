@@ -1,0 +1,269 @@
+/**
+ * AgroSmart – Modern Agriculture Design System
+ * BCA Field Project Custom Stylesheet
+ */
+
+:root {
+  --agro-primary: #2e7d32;
+  --agro-primary-dark: #1b5e20;
+  --agro-primary-light: #4caf50;
+  --agro-bg-soft: #f1f8e9;
+  --agro-accent-earth: #795548;
+  --agro-accent-gold: #fbc02d;
+  --agro-text-dark: #1f2937;
+  --agro-border-subtle: #dcedc8;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--agro-text-dark);
+  background-color: #f9fbf9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Brand Navbar */
+.navbar-agro {
+  background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+  box-shadow: 0 4px 15px rgba(27, 94, 32, 0.18);
+  padding: 0.8rem 1rem;
+}
+
+.navbar-agro .navbar-brand {
+  font-weight: 700;
+  font-size: 1.45rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-agro .nav-link {
+  color: rgba(255, 255, 255, 0.92) !important;
+  font-weight: 500;
+  padding: 0.5rem 0.85rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.navbar-agro .nav-link:hover,
+.navbar-agro .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff !important;
+}
+
+/* Buttons */
+.btn-agro-primary {
+  background-color: var(--agro-primary);
+  border-color: var(--agro-primary);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(46, 125, 50, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-agro-primary:hover {
+  background-color: var(--agro-primary-dark);
+  border-color: var(--agro-primary-dark);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(46, 125, 50, 0.3);
+}
+
+.btn-agro-outline {
+  border: 2px solid var(--agro-primary);
+  color: var(--agro-primary);
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.55rem 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.btn-agro-outline:hover {
+  background-color: var(--agro-primary);
+  color: #ffffff;
+}
+
+/* Hero Section */
+.agro-hero {
+  background: linear-gradient(135deg, rgba(27, 94, 32, 0.92) 0%, rgba(46, 125, 50, 0.85) 100%),
+              url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path d="M30 5 C15 5 10 20 10 35 C25 35 35 25 35 10 Z" fill="rgba(255,255,255,0.03)"/></svg>');
+  color: #ffffff;
+  padding: 5rem 1rem 4.5rem;
+  border-bottom: 5px solid #a5d6a7;
+}
+
+.agro-hero h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.agro-hero p.lead {
+  font-size: 1.25rem;
+  max-width: 720px;
+  margin: 1.2rem auto 2rem;
+  opacity: 0.95;
+}
+
+/* Custom Cards */
+.card-agro {
+  border: 1px solid var(--agro-border-subtle);
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+  overflow: hidden;
+}
+
+.card-agro:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(46, 125, 50, 0.12);
+  border-color: #a5d6a7;
+}
+
+.card-agro-header {
+  background-color: #f1f8e9;
+  border-bottom: 1px solid var(--agro-border-subtle);
+  font-weight: 700;
+  color: var(--agro-primary-dark);
+  padding: 1rem 1.25rem;
+}
+
+/* Dashboard Metric Cards */
+.metric-card {
+  border-radius: 12px;
+  padding: 1.35rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.metric-card:hover {
+  transform: translateY(-2px);
+}
+
+.metric-card.metric-green {
+  background: linear-gradient(135deg, #2e7d32 0%, #43a047 100%);
+}
+
+.metric-card.metric-gold {
+  background: linear-gradient(135deg, #f57f17 0%, #fbc02d 100%);
+}
+
+.metric-card.metric-blue {
+  background: linear-gradient(135deg, #0277bd 0%, #039be5 100%);
+}
+
+.metric-card.metric-earth {
+  background: linear-gradient(135deg, #4e342e 0%, #6d4c41 100%);
+}
+
+.metric-number {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.metric-title {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+.metric-icon {
+  font-size: 2.8rem;
+  opacity: 0.85;
+}
+
+/* Badges */
+.badge-pending {
+  background-color: #fff8e1;
+  color: #b78103;
+  border: 1px solid #ffe082;
+}
+
+.badge-approved {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+}
+
+.badge-rejected {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #ffcdd2;
+}
+
+/* Farmer Friendly Big Action Buttons */
+.farmer-action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 2px solid #c8e6c9;
+  color: var(--agro-primary-dark);
+  text-decoration: none;
+  font-weight: 700;
+  gap: 0.75rem;
+  transition: all 0.2s ease;
+  min-height: 125px;
+}
+
+.farmer-action-btn i {
+  font-size: 2.3rem;
+  color: var(--agro-primary);
+}
+
+.farmer-action-btn:hover {
+  background-color: #f1f8e9;
+  border-color: var(--agro-primary);
+  color: var(--agro-primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(46, 125, 50, 0.15);
+}
+
+/* Notice Box */
+.agro-notice-box {
+  background-color: #fffde7;
+  border-left: 5px solid #fbc02d;
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  color: #616161;
+  margin: 1.5rem 0;
+}
+
+/* Footer */
+footer.agro-footer {
+  background-color: #1b5e20;
+  color: #e8f5e9;
+  padding: 3rem 1rem 1.5rem;
+  margin-top: 3.5rem;
+  border-top: 4px solid #a5d6a7;
+}
+
+footer.agro-footer a {
+  color: #c8e6c9;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer.agro-footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}

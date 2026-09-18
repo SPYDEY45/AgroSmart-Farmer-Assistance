@@ -1,0 +1,7 @@
+{
+  "name": "AgroSmart",
+  "description": "Smart Agriculture Assistant & Farmer Market Portal - BCA Field Project with crop guidance, weather, market prices, disease diagnosis, and farmer marketplace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
